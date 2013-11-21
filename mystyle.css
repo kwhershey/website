@@ -1,0 +1,96 @@
+#centeredmenu{
+float:left;
+width:100%;
+background:#fff;
+overflow:hidden;
+position:relative;
+}
+#centeredmenu ul {
+clear:left;
+float:left;
+	  list-style:none;
+margin:0;
+padding:0;
+position:relative;
+left:50%;
+	 text-align:center;
+}
+#centeredmenu ul li {
+display:block;
+float:left;
+	  list-style:none;
+margin:0;
+padding:0;
+position:relative;
+right:50%;
+}
+#centeredmenu ul li a {
+display:block;
+margin:0 0 0 1px;
+padding:3px 10px;
+	background:#485e49;
+	color:#eee;
+	  text-decoration:none;
+	  line-height:1.3em;
+}
+#centeredmenu li a:hover {
+background:#a2b3a1;
+color:#000
+}
+
+#centeredmenuul{
+float:left;
+width:100%;
+background:#fff;
+		   border-bottom:4px solid #000;
+overflow:hidden;
+position:relative;
+}
+#centeredmenuul ul {
+clear:left;
+float:left;
+	  list-style:none;
+margin:0;
+padding:0;
+position:relative;
+left:50%;
+	 text-align:center;
+}
+#centeredmenuul ul li {
+display:block;
+float:left;
+	  list-style:none;
+margin:0;
+padding:0;
+position:relative;
+right:50%;
+}
+#centeredmenuul ul li a {
+display:block;
+margin:0 0 0 1px;
+padding:3px 10px;
+	background:#485e49;
+	color:#eee;
+	  text-decoration:none;
+	  line-height:1.3em;
+}
+#centeredmenuul li a:hover {
+background:#a2b3a1;
+color:#000
+}
+img.displayed {
+display: block;
+		 margin-left: auto;
+		 margin-right: auto;
+}
+
+p{text-align: center}
+div.blocktext {
+	margin-left:auto;
+	margin-right:auto;
+	width: 20em;
+}
+h1{text-align:center}
+h2{text-align:center}
+h3{text-align:center}
+form{text-align:center}

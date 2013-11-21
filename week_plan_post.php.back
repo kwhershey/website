@@ -1,0 +1,47 @@
+<html>
+<head><title>recipes+</title>
+</head>
+<body>
+<h1>Recipes+</h1>
+
+<?php include("header.php")?>
+
+<div id="centeredmenu">
+<ul>
+	<li><A href=week_plan.php>Back</a></li>
+</ul>
+</div>
+<br>
+
+<?php
+$meals = $_POST['meals'];
+}
+$N=count($meals);
+for($i=0;$i<$N;$i++)
+{
+	echo $meals[$i];
+}
+
+?>
+<?php
+$meals = $_POST['meals'];
+$db = new mysqli('localhost','root','mellon','recipes');
+if($db->connect_errno >0){
+	die('Unable to connect to database [' . $db->connect_error . ']');
+}
+$N=count($meals);
+for($i=0;$i<$N;$i++)
+{
+	echo $meals[$i];
+	$query="select * from contents where recipe=\'" . $meals[$i] . "\';";
+	$db->query($query) or die($db->error);
+	while($row = $results->fetch_assoc()){
+		echo  $row['ingredient']; 
+	}
+}
+
+$results->free();
+$db->close();
+
+?>
+</html>
